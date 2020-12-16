@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+    host: xx.xx.xxx.xxx
+    port: 5672
+    username: xxxxx
+    password: xxxxx
+    virtual-host: scoket
+      # 开启消息发送确认
+    publisher-confirm-type: simple
+    publisher-returns: true
+    listener:
+      simple:
+        acknowledge-mode: auto
+  thymeleaf:
+    prefix: classpath:/templates/
